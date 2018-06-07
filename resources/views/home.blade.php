@@ -2,7 +2,7 @@
 
     <html>
 
-    <br> <br>
+
 
     
 
@@ -27,12 +27,7 @@
             <li class="nav-item">
                 <a class="nav-link" href"#"> Inicio </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href"#"> Seriviço </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href"#"> Perfil </a>
-            </li>
+       
                 </ul>
 
                        <ul class="navbar-nav ml-auto">
@@ -62,7 +57,11 @@
 <br><br>
 <a class="btn btn-primary" href="http://127.0.0.1:8000/caes"> Cachorros </a> &nbsp;  &nbsp;  &nbsp;  <a class="btn btn-primary" href="http://127.0.0.1:8000/caes/formulario"> Cadastro </a>
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+  Site desenvolvido por:<br>
+  Lucas Bruna Isabella e Graziela 
+</footer>
 
  </body>
  </html>	
