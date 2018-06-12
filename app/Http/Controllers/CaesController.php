@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use  Illuminate\Support\Facades\DB;
-
+Use App\veterinaria;
 
 class CaesController extends Controller
 {
@@ -14,8 +14,7 @@ class CaesController extends Controller
     }
     public function caes()
     {
-        $caes = DB::select('select * from caes');
-
+        $caes = veterinaria::all();
         return view('cao') -> with('caes', $caes);
     
     }
@@ -28,23 +27,23 @@ class CaesController extends Controller
     public function cadastro(Request $request)
     {
 
-       
+            $caes = new veterinaria();
             
-            $nome = $request->input('nome');
-            $raca = $request->input('raca');
+            $caes->nome = $request->input('nome');
+            $caes->raca = $request->input('raca');
             
-            DB::select('insert into caes (nome, raca) values (?, ?)' , [$nome, $raca]);
-            return redirect('/caes');
+            $caes->save();
             
 
-
+        return redirect('/caes');
     
         
     }
 
-public function deletar (){
+public function deletar ($id){
 
-    $linhasAfetadas = DB::delete('delete from caes where id = ?', [$id]);
+    $linhasAfetadas = veterinaria::find($id);
+    $linhasAfetadas->delete();
     return redirect('/caes');
 
 }    

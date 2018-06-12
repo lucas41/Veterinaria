@@ -18,7 +18,7 @@
 <tr> 
 <td>&nbsp;<?= $cao->Nome ?>&nbsp;</td> 
 <td>&nbsp;<?= $cao->raca ?>&nbsp;</td>  
-<td>&nbsp;<button type="submit" class="btn btn-danger">deletar</button> </td>
+<td><a class="btn btn-danger" href="/caes/deletar/{{$cao->id}}">Apagar </a></td>
 <td>&nbsp;<button type="button" class="btn btn-success">Editar</button></td>
 </tr>
 
