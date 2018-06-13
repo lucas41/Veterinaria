@@ -46,7 +46,7 @@
 <h3>  bem vindo a nossa veterinaria <h3>
 
 <br><br>
-<a class="btn btn-primary" href="http://127.0.0.1:8000/caes"> Cachorros </a> &nbsp;  &nbsp;  &nbsp;  <a class="btn btn-primary" href="http://127.0.0.1:8000/caes/formulario"> Cadastro </a>
+<a class="btn btn-primary" href="{{ url('/caes') }}"> Cachorros </a> &nbsp;  &nbsp;  &nbsp;  <a class="btn btn-primary" href="{{ url('/caes/formulario') }}"> Cadastro </a>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
