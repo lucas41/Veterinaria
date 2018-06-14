@@ -55,7 +55,7 @@
 <br>
 <div class="footer">
   <p>Site desenvolvido por</p>
-  <p>Lucas Delfini, Bruna Fernanda, Isabella, Mikael, Gabriel, Graziela</p>
+  <p>Lucas Delfini, Bruna Fernanda, Isabella, Micael, Gabriel, Graziela</p>
 </div> 
 </html>
 
