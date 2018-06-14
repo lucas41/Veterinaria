@@ -8,8 +8,15 @@
 
 
    
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<style>
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
+</style>
+<img class="displayed" src="/imagens/00.png" alt="Logo" style="width:200px;">
 <h1><center> INICIO <center><h1>
 <br>
 <h3> bem vindo a nossa clínica veterinária <h3>

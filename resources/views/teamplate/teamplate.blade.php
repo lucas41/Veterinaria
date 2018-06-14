@@ -43,7 +43,7 @@
 
  <style>
 .footer {
-    position: absolute;
+    position:sticky;
     left: 0;
     bottom: 0;
     width: 100%;
