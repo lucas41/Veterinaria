@@ -24,11 +24,25 @@
 		 </label>
         <br><br>
         <input class="btn btn-primary" type="submit" value="enviar">
-        
+        </section>
+
 </form> </center>
 
 
+@if (count($errors) > 0) 
+<div class="alert alert-danger"> 
+<ul> @foreach ($errors->all() as $error)
+ <li>{{ $error }}</li> 
+ @endforeach 
+ </ul> 
+ </div> @endif
 
-</section>
+
+
+ </ul> 
+ </div> 
+
+
+
 
 @endsection('site')

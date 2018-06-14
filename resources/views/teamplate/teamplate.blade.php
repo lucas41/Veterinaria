@@ -10,7 +10,7 @@
       
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Site</a>
+        <a class="navbar-brand" href="http://127.0.0.1:8000/">Site</a>
          <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </div>

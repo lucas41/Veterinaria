@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use  Illuminate\Support\Facades\DB;
 Use App\veterinaria;
+use App\Http\Requests\ProdutoRequest;
 
 class CaesController extends Controller
 {
@@ -24,7 +25,7 @@ class CaesController extends Controller
         return view('cadastro');
         }
     
-    public function cadastro(Request $request)
+    public function cadastro(ProdutoRequest $request)
     {
 
             $caes = new veterinaria();
@@ -36,7 +37,6 @@ class CaesController extends Controller
             
 
         return redirect('/caes');
-    
         
     }
 
@@ -47,6 +47,16 @@ public function deletar ($id){
     return redirect('/caes');
 
 }    
-
-
+public function editar($id){
+    $editar = veterinaria::find($id);
+ return view('editar')->with('cao',$editar);
 }
+    public function update(Request $request, $id){
+        $data = $request->all();
+        $caes = veterinaria::find($id);
+        $caes->fill($data);
+        $caes->save();
+        return redirect('/caes');
+    }
+}
+

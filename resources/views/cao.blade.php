@@ -9,7 +9,7 @@
 <th> Nome </th>
 <th> raça </th>
 <th> Deletar </th>
-<th> editar </th>
+<th> Atualizar </th>
 </tr>
 <?php foreach ($caes as $cao) : 
 ?> 
@@ -19,7 +19,7 @@
 <td>&nbsp;<?= $cao->Nome ?>&nbsp;</td> 
 <td>&nbsp;<?= $cao->raca ?>&nbsp;</td>  
 <td><a class="btn btn-danger" href="/caes/deletar/{{$cao->id}}">Apagar </a></td>
-<td>&nbsp;<button type="button" class="btn btn-success">Editar</button></td>
+<td>&nbsp;<a type="button" class="btn btn-success" href="/caes/editar/{{$cao->id}}">Editar</a></td>
 </tr>
 
 <?php endforeach ?> 
