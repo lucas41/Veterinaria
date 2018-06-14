@@ -1,8 +1,8 @@
-
-    <html>
+@extends('teamplate/teamplate')
+ @section('site') 
     <h1><center> cachorros Cadastrados</center></h1>
     <br> <br>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+   
 
 <table class='table' border='1'> 
 <tr>
@@ -24,7 +24,7 @@
 
 <?php endforeach ?> 
 </table>
-</html>
 
 
+@endsection('site')
 

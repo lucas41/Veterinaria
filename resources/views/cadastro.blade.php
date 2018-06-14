@@ -1,7 +1,10 @@
+@extends('teamplate/teamplate')
+
+@section('site')
 <br><br>
 <h1><center> Cadastro </center></h1>
     <br> <br>
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    
 
 <section>
 <center> <form name="Cadastro" method="post" action="{{action('CaesController@cadastro')}}">
@@ -27,3 +30,5 @@
 
 
 </section>
+
+@endsection('site')
